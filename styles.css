@@ -27,7 +27,7 @@
     justify-self:stretch
 }
 
-.search-fields-container input[type="submit"] {
+.search-fields-container input[type="submit"], button {
     border-radius: 5px;
     height: 30px;
     color: #E8EAED;
@@ -35,7 +35,7 @@
     border: none;
 }
 
-.search-fields-container input[type="submit"]:hover {
+.search-fields-container input[type="submit"]:hover, button:hover {
     border: 1px solid white;
 }
 

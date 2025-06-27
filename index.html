@@ -11,9 +11,17 @@
         </div>
         <div class="search-fields-container">
             <form action="https://www.google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
-                <input type="submit" value="I'm feeling lucky">
+                <div>
+                    <input type="text" name="q">
+                </div>
+                <div class="search_buttons">
+                    <input type="submit" value="Google Search">
+                    <button type="submit" formaction="https://www.google.com/search">
+                        I'm feeling lucky
+                    <input type="hidden" name="btnI" value="I">
+                    </button>
+                    
+                </div>
             </form>
         </div>
     </body>
