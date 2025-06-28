@@ -8,33 +8,21 @@
         <div class="links">
             <a href="index.html">Google Search</a>
         </div>
+        <h1>Advanced search</h1>
         <form action="https://www.google.com/search">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Show pages that contain...</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Find pages with...</td>
-                        <td><input type="text" name="as_q" placeholder="all these words"></td>
-                    </tr>
-                    <tr>
-                        <td>Find pages with...</td>
-                        <td><input type="text" name="as_epq" placeholder="this exact word of phrase"></td>
-                    </tr>
-                    <tr>
-                        <td>Find pages with...</td>
-                        <td><input type="text" name="as_oq" placeholder="any of these words"></td>
-                    </tr>
-                    <tr>
-                        <td>Find pages with...</td>
-                        <td><input type="text" name="as_eq" placeholder="none of these words"></td>
-                    </tr>
-                </tbody>
-            </table>
-            <input id="advanced-search-button" type="submit" value="Google Advanced Search">
+            <div class="advanced-search-grid">
+                <div>all these words:</div>
+                <div><input type="text" name="as_q"></div>
+                <div>this exact word of phrase:</div>
+                <div><input type="text" name="as_epq"></div>
+                <div>any of these words:</div>
+                <div><input type="text" name="as_oq"></div>
+                <div>none of these words:</div>
+                <div><input type="text" name="as_eq"></div>
+            </div>
+            <div>
+                <input id="advanced-search-button" type="submit" value="Google Advanced Search">
+            </div>
         </form>
     </body>
 </html>

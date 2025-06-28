@@ -10,14 +10,40 @@ body {
     color: white;
 }
 
+.advanced-search-grid {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 10px;
+    grid-template-columns: 150px auto;
+    padding: 20px;
+    align-items: center;
+}
+
+.advanced-search-grid > div {
+    color: #878CA1;
+    font-size: small;
+}
+
+.advanced-search-grid input {
+    height: 20px;
+    width: 500px;
+    background-color: #202124;
+    border: 1px solid white;
+}
+
+.advanced-search-grid input:focus {
+    border: 1px solid #82aae9;
+}
+
 #advanced-search-button {
-    min-width: 120px;
+    width: 200px;
     height: 30px;
     background-color: #82aae9;
     color: black;
     font-size: small;
     font-weight: bold;
     border-radius: 4px;
+    align-self: self-end;
 }
 
 #advanced-search-button:hover {
