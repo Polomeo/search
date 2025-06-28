@@ -1,3 +1,9 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 #advanced-search-button {
     min-width: 120px;
     height: 30px;
@@ -14,7 +20,8 @@
 
 .search-fields-container {
     display: flex;
-    flex-wrap: wrap;
+    height: 100%; /* adding html, body height solved this */
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     background-color: blue;
@@ -27,15 +34,23 @@
     justify-self:stretch
 }
 
-.search-fields-container input[type="submit"], button {
+.search-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.search-buttons input, button {
     border-radius: 5px;
     height: 30px;
+    margin: 20px;
     color: #E8EAED;
     background-color: #303134;
     border: none;
 }
 
-.search-fields-container input[type="submit"]:hover, button:hover {
+.search-buttons input:hover, button:hover {
     border: 1px solid white;
 }
 
