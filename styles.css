@@ -21,17 +21,22 @@ html, body {
 .search-fields-container {
     display: flex;
     height: 100%; /* adding html, body height solved this */
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     background-color: blue;
 }
 
-.search-fields-container input[type="text"] {
-    border-radius: 5px;
+.searchbar {
+    border-radius: 22px;
     height: 40px;
     width: 500px;
-    justify-self:stretch
+    border: 0px;
+    background-color: #babcc0;
+    padding-left: 22px;
+}
+
+.searchbar:hover, .searchbar:focus {
+    background-color: #E8EAED;
 }
 
 .search-buttons {
